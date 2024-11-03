@@ -20,14 +20,14 @@ class TestGame(unittest.TestCase):
         """проверяем, что сгенерированное слово реально существует
         """
         self.assertTrue(self.game.check_word_exist("apple"))
-        self.assertFalse(self.game.check_word_exist("zzzzz"))
+        self.assertFalse(self.game.check_word_exist("bzbzb"))
 
     def test_word_already_been(self):
         """проверяем, было ли слово уже использовано
         """
         self.game.words.append("apple")
         self.assertTrue(self.game.check_word_already_been("apple"))
-        self.assertFalse(self.game.check_word_already_been("grape"))
+        self.assertFalse(self.game.check_word_already_been("money"))
 
     def test_guess_word_guessed(self):
         """функция guess_word
@@ -50,7 +50,7 @@ class TestGame(unittest.TestCase):
         сценарий:
         слово не существует
         """
-        result = self.game.guess_word("zzzzz")
+        result = self.game.guess_word("bzbzb")
         self.assertEqual(result, "Слово не найдено в словаре.")
 
     def test_guess_word_already_been(self):
