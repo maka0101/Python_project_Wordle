@@ -42,6 +42,26 @@ P.S. Расанов Макар Б05-352
 
 ## Инструкция по запуску
 
+### Установить pip, если не установлен(https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
+### Запустить venv
+
+Зайти в корневую папку проекта и выполнить следующие команды:
+
+```bash
+python -m venv wordle_clone
+```
+
+Windows:
+```bash
+wordle_clone\Scripts\activate
+```
+
+Linux/macOS:
+```bash
+source wordle_clone/bin/activate
+```
+
 ### Подкачать нужные файлики
 
 
